@@ -1,0 +1,46 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #444040;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.poster {
+    display: grid;
+    width: 1200px;
+    height: 665px;
+    margin: auto;
+}
+
+.gradient-section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 700px;
+    height: 665px;
+    background: linear-gradient(180deg, #FE902F 37.76%, #7155CE 100%);
+}
+
+.gradient-section img {
+    align-self: end;
+}
+
+.image-section {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 500px;
+    height: 665px;
+    background-image: url(images/roisin-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
