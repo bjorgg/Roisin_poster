@@ -1,5 +1,6 @@
+/* Body, heading and header styling */
 body {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -7,20 +8,31 @@ h1 {
     color: #444040;
 }
 
-h2 {
-    font-size: 5rem;
-}
-
 header {
     text-align: center;
-    padding: 20px;
+    margin-top: 30px;
+    padding: 10px;
 }
 
+/* The poster with grid and two sections */
 .poster {
     display: grid;
     width: 1200px;
     height: 665px;
-    margin: auto;
+    margin: 50px auto;
+    position: relative;
+}
+
+.text {
+    font-size: 4.6rem;
+    color: #ffffff;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    position: absolute;
+    width: 665px;
+    line-height: 4.2rem;
+    margin-top: 15px;
+    margin-left: 40px;
 }
 
 .gradient-section {
@@ -29,6 +41,10 @@ header {
     width: 700px;
     height: 665px;
     background: linear-gradient(180deg, #FE902F 37.76%, #7155CE 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .gradient-section img {
@@ -43,4 +59,13 @@ header {
     background-image: url(images/roisin-img.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+/* The original poster displayed */
+.orginal-poster {
+    background-image: url(images/roisin-poster.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 665px;
+    margin: 50px auto;
 }
